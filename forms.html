@@ -1,0 +1,120 @@
+             <!-- FORM: Fixed, Accessible, and Ready for GET/POST -->
+<form action="submit.html" method="POST" enctype="multipart/form-data" target="_blank">
+    
+    <!-- Personal Information -->
+    <fieldset>
+        <legend>Personal Information</legend>
+
+        <label for="fname">First Name:</label>
+        <input type="text" id="fname" name="first_name" required>
+        <br><br>
+
+        <label for="lname">Last Name:</label>
+        <input type="text" id="lname" name="last_name">
+        <br><br>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" name="age" min="1" max="120">
+        <br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+        <br><br>
+
+        <input type="submit" value="Register">
+        <input type="reset" value="Clear Form">
+    </fieldset>
+
+    <br><br>
+
+    <!-- Email -->
+    <fieldset>
+        <legend>Contact</legend>
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Gender -->
+    <fieldset>
+        <legend>Gender</legend>
+        <input type="radio" id="male" name="gender" value="Male">
+        <label for="male">Male</label><br>
+
+        <input type="radio" id="female" name="gender" value="Female">
+        <label for="female">Female</label><br>
+
+        <input type="radio" id="other" name="gender" value="Others">
+        <label for="other">Others</label>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Address & Other Info -->
+    <fieldset>
+        <legend>Additional Information</legend>
+
+        <label for="address">Address:</label><br>
+        <textarea id="address" name="address" cols="30" rows="5"></textarea>
+        <br><br>
+
+        <label for="dob">Date of Birth:</label>
+        <input type="date" id="dob" name="dob">
+        <br><br>
+
+        <label for="time">Preferred Contact Time:</label>
+        <input type="time" id="time" name="contact_time">
+        <br><br>
+
+        <label for="month">Favorite Month:</label>
+        <input type="month" id="month" name="fav_month">
+        <br><br>
+
+        <label for="color">Favorite Color:</label>
+        <input type="color" id="color" name="fav_color">
+        <br><br>
+
+        <label for="cv">Upload Your CV:</label>
+        <input type="file" id="cv" name="cv_file">
+    </fieldset>
+
+    <br><br>
+
+    <!-- Terms & State -->
+    <fieldset>
+        <legend>Preferences</legend>
+
+        <input type="checkbox" id="terms" name="terms" required>
+        <label for="terms">I agree to the terms and conditions</label>
+        <br><br>
+
+        <label for="state">Select Your State:</label>
+        <select id="state" name="state">
+            <option value="" selected disabled>Select</option>
+            <option value="Kerala">Kerala</option>
+            <option value="Karnataka">Karnataka</option>
+            <option value="Tamilnadu">Tamil Nadu</option>
+        </select>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Skills -->
+    <fieldset>
+        <legend>Skills</legend>
+        <label for="skills">Enter or Select a Skill:</label>
+        <input type="text" id="skills" name="skills" list="skills_list">
+        <datalist id="skills_list">
+            <option value="Java">
+            <option value="JavaScript">
+            <option value="Python">
+        </datalist>
+    </fieldset>
+
+    <br><br>
+
+    <!-- Final Submit -->
+    <input type="submit" value="Submit Form">
+
+</form>

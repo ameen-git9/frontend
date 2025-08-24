@@ -1,0 +1,107 @@
+/*div{
+    border: 5px solid darkturquoise;
+    padding: 50px 376px;
+    background-color: beige;
+    font-family: fantasy;
+}
+.d1{
+    font-family: 'Times New Roman', Times, serif;
+    color: blue;
+    
+}*/
+   /*descendant */
+
+div p{
+    background-color: lavender;
+}
+
+   /*child */
+
+div>p{
+    background-color: aliceblue;
+}
+
+   /* adjascent sibling */
+div+p{
+    background-color: aqua;
+}
+
+   /* general sibling */
+div~p{
+    background-color: burlywood;
+}
+
+
+
+
+
+
+
+                 /* pseudo_classes.html*/
+
+a:link{
+    color: brown;
+}
+a:visited{
+    color: blue;
+}
+a:active{
+    background-color: aquamarine;
+}
+a:hover{
+    background-color: bisque;
+    
+}
+img{
+    opacity: 0.5;
+    width: 500px;
+    height: 500px;
+}
+img:hover{
+    opacity: 1;
+    border: 5px solid black;
+    border-radius: 27px;
+}
+
+
+
+
+
+                /* pseudo elements.html     */
+
+p::first-line{
+    color: chocolate;
+}
+p::first-letter{
+    font-size: xx-large;
+    color: blue;
+}
+p::after{
+    content: "🤞";
+}
+p::before{
+    content: "🤣";
+}
+
+
+
+
+
+
+/* universal selector.html */
+/* 
+*{
+    padding: 10px;
+    background-color: lawngreen;
+} */
+
+
+body{
+    background-image: url("https://theguerrilla.agency/wp-content/uploads/2018/05/Future_Reflections_by_Patrick_Monkel.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+h1{
+    text-align: center;
+}

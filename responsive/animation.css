@@ -1,0 +1,27 @@
+.main{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    animation-name: box;
+    animation-duration: 15s;
+}
+@keyframes box{
+    0%{background-color: rgb(216, 237, 59);position: relative;top: 0px;left: 0px;}
+    25%{background-color: rgb(33, 233, 179);position: relative;top: 0px;left: 120px;}
+    50%{background-color: rgb(231, 71, 237);position: relative;top: 100px;left: 150px;}
+    75%{background-color: rgb(122, 22, 65);position: relative;top: 20px;left: 50px;}
+    100%{background-color: aliceblue;position: relative;top: 0px;left: 0px;}
+}
+
+/* @media (max-width:600px){
+    body{
+        background-color: blueviolet;
+    }
+} */
+
+@media (max-width:600px){
+    div{
+        width: 45%;
+        background-color: blueviolet;
+    }
+}
